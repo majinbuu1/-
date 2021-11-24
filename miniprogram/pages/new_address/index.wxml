@@ -1,0 +1,26 @@
+<!-- 用户填写区域 -->
+<view class="new_address_wrap">
+      <view class="user_name_wrap">
+            <div class="user_name">
+                  用户姓名
+                  <input bindchange="bindChange" type="text" class="name" placeholder="请输入邮箱地址" />
+            </div>
+
+      </view>
+      <view class="user_phone_number">
+            <view class="user_number">
+                  联系电话
+                  <input bindchange="bindChange" type="text" class="name" placeholder="请输入您的联系方式" />
+            </view>
+      </view>
+      <view class="user_address_wrap">
+            <div class="address_area">
+                  详细地址
+                  <input bindchange="bindChange" type="text" class="name" placeholder="请输入您的收货地址" />
+            </div>
+      </view>
+</view>
+<!-- 保存地址信息 -->
+<view class="save">
+      <button>保存</button>
+</view>

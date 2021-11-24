@@ -1,0 +1,64 @@
+<view class="shop-index">
+    <!-- 搜素框  head -->
+    <SearchInput></SearchInput>
+    <!-- 搜素框 end -->
+
+    <!-- 轮播图  head -->
+    <view class="index_swiper">
+        <!-- 
+        1 swiper 标签存在默认的宽度和高度
+            100%  *  150px
+        2 image 标签也存在默认的宽度和高度
+            32px  *  240px 
+        3 设计图片和轮播图
+            1先看一下原图的宽高   750 * 340
+            2让图片的高度自适应 宽度等于100%
+            3让swiper标签高度变成和图片等比例发生变化
+            4 图片标签
+            mode 属性  渲染模式
+                widthFix  让图片标签的宽高和图片标签的内容宽高等比例发生变化
+         -->
+        <swiper indicator-dots="true" autoplay="true" circular="true" interval="2000">
+            <swiper-item wx:for="{{swiperList}}" wx:key="goods_id">
+                <navigator url="" open-type="navigate">
+                    <image mode="widthFix" src="{{item.image_src}}"> </image>
+                </navigator>
+            </swiper-item>
+        </swiper>
+    </view>
+    <!-- 轮播图 end -->
+
+    <!-- 导航栏  head -->
+    <view class="index_cates">
+        <navigator wx:for="{{catesList}}" wx:key="name">
+            <image mode="widthFix" src="{{item.image_src}}"></image>
+        </navigator>
+    </view>
+    <!-- 导航栏  end -->
+
+    <!-- 楼层图  head -->
+    <view class="index_floor" >
+        <view class="floor_group"
+            wx:for="{{floorList}}"
+            wx:for-item="item1" 
+            wx:for-index="index1" 
+            wx:key="floor_title">
+    <!-- 标题 -->
+            <view class="floor_title">
+                <image src="{{item1.floor_title.image_src}}" mode="widthFix"></image>
+            </view>
+    <!-- 内容 -->
+            <view class="floor_list">
+            <navigator open-type="navigate"
+             wx:for="{{item1.product_list}}" 
+             wx:for-item="item2" 
+             wx:for-index="index2"
+             wx:key="name">
+                <image src="{{item2.image_src}}" mode="{{index2===0?'widthFix':'scaleToFill'}}">
+                </image>
+            </navigator>
+            </view>
+        </view>
+    </view>
+    <!-- 楼层图  end -->
+</view>

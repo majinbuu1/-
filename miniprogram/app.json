@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/category/index",
+    "pages/cart/index",
+    "pages/users/index",
+    "pages/goods_list/index",
+    "pages/goods_detail/index",  
+    "pages/search/index",
+    "pages/pay/index",  
+    "pages/auth/index",  
+    "pages/order/index",
+    "pages/login/index",
+    "pages/new_address/index"
+
+
+  ],
+
+"tabBar": {
+  "color": "",
+  "selectedColor": "",
+  "backgroundColor": "",
+  "position": "bottom",
+  "borderStyle": "black",
+  "list": [
+    {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "icons/home.png",
+      "selectedIconPath": "icons/home-.png"
+    },
+    {
+      "pagePath": "pages/category/index",
+      "text": "分类",
+      "iconPath": "icons/category.png",
+      "selectedIconPath": "icons/category-.png"
+    },
+    {
+      "pagePath": "pages/cart/index",
+      "text": "购物车",
+      "iconPath": "icons/cart.png",
+      "selectedIconPath": "icons/cart-.png"
+    },
+    {
+      "pagePath": "pages/users/index",
+      "text": "用户中心",
+      "iconPath": "icons/mine.png",
+      "selectedIconPath": "icons/mine-.png"
+    }
+  ]
+},
+
+  "window": {
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "buu的店",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

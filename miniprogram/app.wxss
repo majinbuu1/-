@@ -1,0 +1,24 @@
+@import "./styles/iconfont.wxss";
+/* 初始化全局样式 */
+page,text,view,swiper,swiper-item,image,navigator{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 
+主题颜色  通过变量来定义
+*/
+page{
+    --thermColor:#1296db;
+    /* 
+    定义字体大小 
+    假设设计稿的宽度为375px
+    */
+    
+    font-size: 28rpx;
+}
+
+image{
+    width: 100%;
+}

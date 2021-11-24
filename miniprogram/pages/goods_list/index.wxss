@@ -1,0 +1,29 @@
+.first_tabs .tabs_list {
+  display: flex;
+  border-bottom: 1rpx solid #ccc;
+}
+.first_tabs .tabs_list .goods_image {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first_tabs .tabs_list .goods_image image {
+  width: 70%;
+}
+.first_tabs .tabs_list .goods_info {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.first_tabs .tabs_list .goods_info .goods_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.first_tabs .tabs_list .goods_info .goods_price {
+  color: red;
+  font-size: 38rpx;
+}

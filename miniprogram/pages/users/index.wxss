@@ -1,0 +1,40 @@
+.user_info_wrap {
+  height: 40vh;
+  overflow: hidden;
+  background-color: var(--thermColor);
+  position: relative;
+}
+.user_info_wrap .user_ima_wrap {
+  position: relative;
+}
+.user_info_wrap .user_ima_wrap .user_bg {
+  height: 40rpx;
+  filter: blur(10rpx);
+}
+.user_info_wrap .user_ima_wrap .user_info {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30%;
+  text-align: center;
+}
+.user_info_wrap .user_ima_wrap .user_info .user_icon {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.user_info_wrap .user_ima_wrap .user_info .user_name {
+  color: #fff;
+  margin-top: 10rpx;
+}
+.user_info_wrap .user_btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30%;
+  border: 1rpx soild greenyellow;
+  color: greenyellow;
+  font-size: 38rpx;
+  padding: 30rpx;
+  border-radius: 10rpx;
+}

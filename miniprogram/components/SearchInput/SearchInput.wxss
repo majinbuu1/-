@@ -1,0 +1,14 @@
+.shop_index {
+  height: 70rpx;
+  padding: 10rpx;
+  background-color: var(--thermColor);
+}
+.shop_index navigator {
+  height: 100%;
+  display: flex;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15rpx;
+  color: #666;
+}
